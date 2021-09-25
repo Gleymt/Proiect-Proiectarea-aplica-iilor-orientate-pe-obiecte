@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="paooDataSet" targetNamespace="http://tempuri.org/paooDataSet.xsd" xmlns:mstns="http://tempuri.org/paooDataSet.xsd" xmlns="http://tempuri.org/paooDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="paooConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="paooConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PAOO2.Properties.Settings.GlobalReference.Default.paooConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="clientiTableAdapter" GeneratorDataComponentClassName="clientiTableAdapter" Name="clienti" UserDataComponentName="clientiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="paooConnectionString (Settings)" DbObjectName="paoo.clienti" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idclient`, `nume_cli`, `prenume_cli`, `cnp_cli`, `serie_cli` FROM `clienti`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="paooDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="paooDataSet" msprop:Generator_UserDSName="paooDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="clienti" msprop:Generator_TableClassName="clientiDataTable" msprop:Generator_TableVarName="tableclienti" msprop:Generator_TablePropName="clienti" msprop:Generator_RowDeletingName="clientiRowDeleting" msprop:Generator_RowChangingName="clientiRowChanging" msprop:Generator_RowEvHandlerName="clientiRowChangeEventHandler" msprop:Generator_RowDeletedName="clientiRowDeleted" msprop:Generator_UserTableName="clienti" msprop:Generator_RowChangedName="clientiRowChanged" msprop:Generator_RowEvArgName="clientiRowChangeEvent" msprop:Generator_RowClassName="clientiRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
